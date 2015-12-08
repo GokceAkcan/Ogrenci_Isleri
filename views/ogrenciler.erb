@@ -1,0 +1,17 @@
+<table border="1" style="border: inherit;" bgcolor="#f5f5dc">
+  <caption><em>Öğrenci Listesi</em></caption>
+  <tr>
+    <td>Öğrenci Numarası</td>
+    <td>Resim</td>
+    <td>Ad</td>
+    <td>Soyad</td>
+  </tr>
+  <% @ogrenciler.each do |ogrenci| %>
+      <tr>
+        <td><%= ogrenci[:numara] %></td>
+        <td><img src="<%= ogrenci[:url] %>" style="width: 60px;"></td>
+        <td><%= ogrenci[:ad] %></td>
+        <td><%= ogrenci[:soyad] %></td>
+      </tr>
+  <% end %>
+</table>

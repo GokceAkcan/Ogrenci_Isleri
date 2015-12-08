@@ -1,0 +1,19 @@
+<table border="1" style="border: inherit;" bgcolor="#f5f5dc">
+  <caption><em>Ödev Sonuçları</em></caption>
+  <tr>
+    <td>Öğrenci Numarası</td>
+    <td>Ad</td>
+    <td>Soyad</td>
+    <td>Ödev Notu</td>
+    <td>Harf ile</td>
+  </tr>
+  <% @ogrenciler.each do |ogrenci| %>
+      <tr>
+        <td><%= ogrenci[:numara] %></td>
+        <td><%= ogrenci[:ad] %></td>
+        <td><%= ogrenci[:soyad] %></td>
+        <td><%= ogrenci[:odev] %></td>
+        <td><%= ogrenci[:harf] %></td>
+      </tr>
+  <% end %>
+</table>

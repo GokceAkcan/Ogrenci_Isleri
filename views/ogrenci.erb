@@ -1,0 +1,25 @@
+<table border="1" style="border: inherit;" bgcolor="#f5f5dc">
+  <caption><em>Öğrenci Bilgileri</em></caption>
+  <tr>
+    <td>Öğrenci Numarası</td>
+    <td>Resim</td>
+    <td>Ad</td>
+    <td>Soyad</td>
+    <td>Vize Puanı</td>
+    <td>Ödev Puanı</td>
+    <td>Final Puanı</td>
+    <td>Not Ortalaması</td>
+    <td>Harf ile</td>
+  </tr>
+  <tr>
+    <td><%= @ogrenci[:numara] %></td>
+    <td><img src="<%= @ogrenci[:gorsel_adresi] %>" style="width: 60px;"></td>
+    <td><%= @ogrenci[:ad] %></td>
+    <td><%= @ogrenci[:soyad] %></td>
+    <td><%= @ogrenci[:vize_puan] %></td>
+    <td><%= @ogrenci[:odev_puan] %></td>
+    <td><%= @ogrenci[:final_puan] %></td>
+    <td><%= @ogrenci[:ortalama] %></td>
+    <td><%= @ogrenci[:harf] %></td>
+  </tr>
+</table>

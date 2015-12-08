@@ -1,0 +1,25 @@
+<table border="1" style="border: inherit;" bgcolor="#f5f5dc">
+  <caption><em>Tüm Puanlar</em></caption>
+  <tr>
+    <td>Öğrenci Numarası</td>
+    <td>Ad</td>
+    <td>Soyad</td>
+    <td>Vize Puanı</td>
+    <td>Ödev Puanı</td>
+    <td>Final Puanı</td>
+    <td>Ortalama</td>
+    <td>Harf ile</td>
+  </tr>
+  <% @ogrenciler.each do |ogrenci| %>
+      <tr>
+        <td><%= ogrenci[:numara] %></td>
+        <td><%= ogrenci[:ad] %></td>
+        <td><%= ogrenci[:soyad] %></td>
+        <td><%= ogrenci[:vize] %></td>
+        <td><%= ogrenci[:odev] %></td>
+        <td><%= ogrenci[:final] %></td>
+        <td><%= ogrenci[:ortalama] %></td>
+        <td><%= ogrenci[:harf] %></td>
+      </tr>
+  <% end %>
+</table>
